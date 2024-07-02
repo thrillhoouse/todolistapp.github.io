@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>spork's to do list</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- google Raleway font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- google Kanit font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- background container -->
+<div class="container">
+    <!-- titlebar -->
+    <div class="topbar">
+        <a class="default" href="https://i.ibb.co/4fBpCG8/Donkey-Kong-character.png">not much here</a>
+        <h1>This is a to do list written in JS, CSS, and HTML</h1>
+    </div>
+    <!-- middle stuff -->
+     <div class="middlething">
+        <h1>To do list:</h1>
+        <div class="input_area">
+            <input type="text" id="input_area" placeholder="type down your task" maxlength="35">
+            <button onclick="moreTasks()">Add Task</button>
+        </div>
+        <ul id="contents">
+          <!--<li class="selected">Task1</li>
+            <li>Task2</li>
+            <li>Task3</li>-->
+        </ul>
+     </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

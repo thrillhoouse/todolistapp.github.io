@@ -1,0 +1,214 @@
+*{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: medium;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    min-height: 140vh;
+    background: linear-gradient(200deg, #219ebc,#08576b, #023047);
+    background-size: 400% 400%;
+    animation: base-animation 10s ease infinite; 
+}
+@keyframes base-animation{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.topbar{
+    overflow: hidden;
+    height: 1.2cm;
+}
+
+
+.topbar a{
+    position: absolute;
+    top: 1387px; left: 1806px;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    background-color:#2e4066;
+    color: white;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.topbar a:hover{
+    background-color: #8bb4b6;
+    color: #1C3738;
+}
+
+.topbar h1{
+    float: left;
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+    font-weight: bold;
+}
+
+.middlething {
+    margin: auto;
+    position: absolute;
+    top: 160px; left: 0; bottom: 0; right: 0;
+    max-width: 700px;
+    height: 1100px;
+    background: linear-gradient(135deg, #F4FFF8, #8BAAAD);
+    border-radius: 10px;
+    background-size: 400% 400%;
+    animation: mid-animation 15s ease infinite;
+}
+
+@keyframes mid-animation{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.middlething h1{
+    text-align: center;
+    padding: 60px 80px;
+    font-size: 50px;
+    color: #062224;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ul li {
+    list-style: none;
+    font-family: "Kanit", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    font-style: normal;
+    user-select: none;
+    padding: 18px 480px 12px 34px;
+    position: relative;
+    top: 70px; left: 34px;
+    width: 100px;
+    margin: 12px;
+    background-size: 400% 400%;
+    cursor: pointer;
+    background: linear-gradient(30deg, #F4FFF8, #e4feff);
+    border-radius: 10px;
+    animation: ulli-anim 7s ease infinite;
+    transition: 1s;
+    
+}
+
+@keyframes ulli-anim{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-image: url(pngs/checkbox.png);
+    background-size: cover;
+    background-position: center;
+    top: 14px; left: 3px;
+}
+
+ul li:hover {
+    background: linear-gradient(137deg, #52b69a, #99d98c, #34a0a4 );
+    animation: ulli-anim 15s ease infinite;
+    background-size: 400% 400%;
+}
+
+@keyframes ulli-anim{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+ul li.selected{
+   text-decoration: line-through; 
+   color: #727272;
+}
+
+ul li.selected::before {
+    background-image: url(pngs/check.png);
+}
+
+ul li button{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+}
+
+
+ul li img {
+    position: absolute;
+    height: 32px; 
+    width: 32px;
+    left: 565px;
+    top: 10px;
+    padding: 2px 2px;
+    background: linear-gradient(27deg, #003049, #52b69a);
+    transition: 0.2s;
+    background-size: 400% 400%;
+    border-radius: 10px;
+    outline-width: 1px;
+    animation: img-anim 5s ease infinite;
+}
+
+@keyframes img-anim{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+ul li img:hover {
+    background: linear-gradient(27deg, #f72585, #780000);
+    background-size: 400% 400%;
+    animation: img-anim 5s ease infinite;
+}
+
+.input_area {
+    display: flex;
+    align-items: center;
+}
+
+.input_area input{
+    position: absolute;
+    top: 199px; left: 150px;
+    padding: 13px 40px;
+    border-radius: 5px;
+    background: #ebf8f8;
+    border: none;
+    transition: 0.2s;
+    outline: none;
+}
+
+.input_area input:hover{
+    background: #a4d3d3;
+}
+
+.input_area button{
+    position: absolute;
+    top: 199px; left: 450px;
+    padding: 13px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: #219EBC;
+    color: #ebf8f8;
+    transition: 0.3s;
+}
+
+.input_area button:hover {
+    background: #FFB703;
+}
+
